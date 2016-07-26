@@ -39,7 +39,7 @@ describe('Robot', function() {
   //   expect(robot.history()).toEqual(["left", "up"]);
   // });
   //
-  // it("can only make one move per battery charge", function () {
+  // it("can only make one move per battery charge, at 0 it will no longer move.", function () {
   //   robot = new Robot(3);
   //   expect(robot.battery()).toEqual(3);
   //
@@ -51,6 +51,9 @@ describe('Robot', function() {
   //
   //   robot.moveUp();
   //   expect(robot.battery()).toEqual(0);
+  //
+  //   robot.moveUp();
+  //   expect(robot.position()).toEqual([-1, 2]);
   // });
 
 });
